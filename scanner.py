@@ -1,3 +1,4 @@
+import time
 import yfinance as yf
 import pandas as pd
 import requests
@@ -112,10 +113,14 @@ if __name__ == "__main__":
 
     results = []
 
-    for stock in stocks:
+    for i, stock in enumerate(stocks, start=1):
 
-        result = check_stock(stock)
+    print(f"Scanning {i}/{len(stocks)}: {stock}")
 
+    if "." in stock:
+        continue
+
+    result = check_stock(stock)
         if result:
             results.append(result)
 
