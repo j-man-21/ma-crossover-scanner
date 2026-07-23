@@ -1,16 +1,30 @@
 import yfinance as yf
 import pandas as pd
+import requests
 
 
-# Your screener rules
 MIN_PRICE = 4
 MAX_PRICE = 10
 MIN_VOLUME = 1_000_000
 
 
+def get_stock_list():
+
+    url = (
+        "https://raw.githubusercontent.com/"
+        "datasets/s-and-p-500-companies/master/"
+        "data/constituents.csv"
+    )
+
+    df = pd.read_csv(url)
+
+    return df["Symbol"].tolist()
+
+
 def check_stock(ticker):
 
     try:
+
         data = yf.download(
             ticker,
             period="6mo",
@@ -18,54 +32,103 @@ def check_stock(ticker):
             progress=False
         )
 
-        if len(data) < 20:
+        if len(data) < 30:
             return None
 
-        close = data["Close"]
-        volume = data["Volume"]
+        close = data["Close"].squeeze()
+        volume = data["Volume"].squeeze()
 
-        current_price = float(close.iloc[-1])
+        price = float(close.iloc[-1])
         avg_volume = float(volume.tail(20).mean())
 
-        # Price filter
-        if current_price < MIN_PRICE or current_price > MAX_PRICE:
+        if price < MIN_PRICE or price > MAX_PRICE:
             return None
 
-        # Volume filter
         if avg_volume < MIN_VOLUME:
             return None
+
 
         ma5 = close.rolling(5).mean()
         ma10 = close.rolling(10).mean()
 
-        yesterday_cross = (
-            ma5.iloc[-2] < ma10.iloc[-2]
+
+        crossed_up = (
+            ma5.iloc[-2] <= ma10.iloc[-2]
             and ma5.iloc[-1] > ma10.iloc[-1]
         )
 
-        yesterday_cross_down = (
-            ma5.iloc[-2] > ma10.iloc[-2]
+        crossed_down = (
+            ma5.iloc[-2] >= ma10.iloc[-2]
             and ma5.iloc[-1] < ma10.iloc[-1]
         )
 
-        if not (yesterday_cross or yesterday_cross_down):
+
+        if not crossed_up and not crossed_down:
             return None
+
 
         separation = (
             (ma5.iloc[-1] - ma10.iloc[-1])
             / ma10.iloc[-1]
         ) * 100
 
+
+        day_change = (
+            (close.iloc[-1]-close.iloc[-2])
+            / close.iloc[-2]
+        ) * 100
+
+
+        score = (
+            abs(day_change) * .5
+            + abs(separation) * .5
+        )
+
+
         return {
             "ticker": ticker,
-            "price": round(current_price, 2),
-            "volume": round(avg_volume),
-            "signal": "Bullish" if yesterday_cross else "Bearish",
-            "ma_separation": round(separation, 2)
+            "price": round(price,2),
+            "signal":
+                "Bullish" if crossed_up else "Bearish",
+            "change":
+                round(day_change,2),
+            "separation":
+                round(separation,2),
+            "volume":
+                int(avg_volume),
+            "score":
+                round(score,2)
         }
+
 
     except Exception:
         return None
 
 
-print("Scanner ready")
+
+if __name__ == "__main__":
+
+    stocks = get_stock_list()
+
+    results = []
+
+    for stock in stocks:
+
+        result = check_stock(stock)
+
+        if result:
+            results.append(result)
+
+
+    results = sorted(
+        results,
+        key=lambda x: x["score"],
+        reverse=True
+    )
+
+
+    print("RESULTS")
+    print("----------------")
+
+    for r in results[:20]:
+        print(r)
