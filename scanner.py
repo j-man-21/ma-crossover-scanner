@@ -64,8 +64,8 @@ def check_stock(ticker):
         )
 
 
-       # if not crossed_up and not crossed_down:
-        #    return None
+        if not crossed_up and not crossed_down:
+            return None
 
 
         separation = (
@@ -113,7 +113,13 @@ def run_scanner():
 
     results = []
 
-    for stock in stocks:
+checked = 0
+price_matches = 0
+volume_matches = 0
+
+for stock in stocks:
+
+    checked += 1
 
         if "." in stock:
             continue
@@ -129,6 +135,8 @@ def run_scanner():
         reverse=True
     )
 
+    print("Checked:", checked)
+    print("Results:", len(results))
     return results[:20]
 
 
