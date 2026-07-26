@@ -113,13 +113,7 @@ def run_scanner():
 
     results = []
 
-checked = 0
-price_matches = 0
-volume_matches = 0
-
-for stock in stocks:
-
-    checked += 1
+    for stock in stocks:
 
         if "." in stock:
             continue
@@ -135,8 +129,6 @@ for stock in stocks:
         reverse=True
     )
 
-    print("Checked:", checked)
-    print("Results:", len(results))
     return results[:20]
 
 
