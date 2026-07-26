@@ -1,6 +1,8 @@
 from flask import Flask, jsonify
+from scanner import run_scanner
 
 app = Flask(__name__)
+
 
 @app.get("/")
 def home():
@@ -10,11 +12,14 @@ def home():
         "version": "1.0"
     })
 
+
 @app.get("/scan")
 def scan():
-    # We'll connect your scanner.py here next.
+
+    results = run_scanner()
+
     return jsonify({
         "status": "success",
-        "message": "Scanner endpoint is working.",
-        "results": []
+        "count": len(results),
+        "results": results
     })
