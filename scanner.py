@@ -107,23 +107,21 @@ def check_stock(ticker):
 
 
 
-if __name__ == "__main__":
+def run_scanner():
 
     stocks = get_stock_list()
 
     results = []
 
-    for i, stock in enumerate(stocks, start=1):
+    for stock in stocks:
 
-    print(f"Scanning {i}/{len(stocks)}: {stock}")
+        if "." in stock:
+            continue
 
-    if "." in stock:
-        continue
+        result = check_stock(stock)
 
-    result = check_stock(stock)
         if result:
             results.append(result)
-
 
     results = sorted(
         results,
@@ -131,9 +129,15 @@ if __name__ == "__main__":
         reverse=True
     )
 
+    return results[:20]
+
+
+if __name__ == "__main__":
+
+    results = run_scanner()
 
     print("RESULTS")
     print("----------------")
 
-    for r in results[:20]:
+    for r in results:
         print(r)
