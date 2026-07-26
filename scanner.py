@@ -64,8 +64,8 @@ def check_stock(ticker):
         )
 
 
-        if not crossed_up and not crossed_down:
-            return None
+       # if not crossed_up and not crossed_down:
+        #    return None
 
 
         separation = (
