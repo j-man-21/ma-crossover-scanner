@@ -19,7 +19,7 @@ def get_stock_list():
 
     df = pd.read_csv(url)
 
-    return df["Symbol"].tolist()
+    return df["Symbol"].tolist()[:100]
 
 
 def check_stock(ticker):
