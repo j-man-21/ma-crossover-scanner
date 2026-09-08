@@ -4,8 +4,8 @@ import pandas as pd
 import requests
 
 
-MIN_PRICE = 1
-MAX_PRICE = 500
+MIN_PRICE = 4
+MAX_PRICE = 10
 MIN_VOLUME = 1_000_000
 
 
