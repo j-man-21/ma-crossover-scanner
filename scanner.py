@@ -1,6 +1,8 @@
 import yfinance as yf
 import pandas as pd
 import requests
+import json
+from datetime import datetime, timezone
 
 MIN_PRICE = 4.00
 MAX_PRICE = 10.00
@@ -347,3 +349,14 @@ if __name__ == "__main__":
             f"MA Sep {r['separation']:6.2f}% "
             f"Score {r['score']:5.2f}"
         )
+
+    output = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "count": len(results),
+        "results": results
+    }
+
+    with open("results.json", "w") as f:
+        json.dump(output, f, indent=2)
+
+    print("\nSaved results to results.json")
