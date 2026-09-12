@@ -235,10 +235,17 @@ def check_history_batch(data, tickers):
             # Ranking combines:
             # 50% recent price movement
             # 50% MA separation
-            score = (
-                abs(day_change) * 0.50
-                + abs(separation) * 0.50
-            )
+            if bullish:
+    momentum_score = max(day_change, 0)
+    separation_score = max(separation, 0)
+else:
+    momentum_score = max(-day_change, 0)
+    separation_score = max(-separation, 0)
+
+score = (
+    momentum_score * 0.50
+    + separation_score * 0.50
+)
 
             results.append({
                 "ticker": ticker,
