@@ -1,0 +1,206 @@
+{
+  "generated_at": "2026-09-14T18:05:06.709674+00:00",
+  "count": 20,
+  "results": [
+    {
+      "ticker": "RES",
+      "price": 6.08,
+      "signal": "Bearish",
+      "change": -5.74,
+      "separation": -0.82,
+      "volume": 1389908,
+      "crossover_days_ago": 1,
+      "score": 3.28
+    },
+    {
+      "ticker": "IMSR",
+      "price": 4.44,
+      "signal": "Bearish",
+      "change": -6.44,
+      "separation": -0.09,
+      "volume": 1124914,
+      "crossover_days_ago": 0,
+      "score": 3.26
+    },
+    {
+      "ticker": "EXK",
+      "price": 9.8,
+      "signal": "Bearish",
+      "change": -3.78,
+      "separation": -1.76,
+      "volume": 9411612,
+      "crossover_days_ago": 1,
+      "score": 2.77
+    },
+    {
+      "ticker": "FTFT",
+      "price": 5.69,
+      "signal": "Bullish",
+      "change": 97.57,
+      "separation": 22.87,
+      "volume": 12731043,
+      "crossover_days_ago": 1,
+      "score": 2.77
+    },
+    {
+      "ticker": "BIAF",
+      "price": 7.89,
+      "signal": "Bearish",
+      "change": -0.75,
+      "separation": -4.58,
+      "volume": 7943782,
+      "crossover_days_ago": 0,
+      "score": 2.67
+    },
+    {
+      "ticker": "BMGL",
+      "price": 7.38,
+      "signal": "Bullish",
+      "change": 61.14,
+      "separation": 1.87,
+      "volume": 1518804,
+      "crossover_days_ago": 0,
+      "score": 2.67
+    },
+    {
+      "ticker": "NXE",
+      "price": 9.45,
+      "signal": "Bearish",
+      "change": -4.01,
+      "separation": -1.14,
+      "volume": 4754685,
+      "crossover_days_ago": 0,
+      "score": 2.58
+    },
+    {
+      "ticker": "ALVO",
+      "price": 5.09,
+      "signal": "Bearish",
+      "change": -3.88,
+      "separation": -0.87,
+      "volume": 1003055,
+      "crossover_days_ago": 0,
+      "score": 2.37
+    },
+    {
+      "ticker": "BULL",
+      "price": 8.94,
+      "signal": "Bearish",
+      "change": -3.09,
+      "separation": -0.96,
+      "volume": 18796882,
+      "crossover_days_ago": 0,
+      "score": 2.03
+    },
+    {
+      "ticker": "SB",
+      "price": 8.39,
+      "signal": "Bearish",
+      "change": -1.47,
+      "separation": -2.39,
+      "volume": 1141055,
+      "crossover_days_ago": 1,
+      "score": 1.93
+    },
+    {
+      "ticker": "SNAP",
+      "price": 5.89,
+      "signal": "Bullish",
+      "change": 3.79,
+      "separation": 0.32,
+      "volume": 35405273,
+      "crossover_days_ago": 0,
+      "score": 1.93
+    },
+    {
+      "ticker": "BTG",
+      "price": 5.22,
+      "signal": "Bearish",
+      "change": -2.97,
+      "separation": -0.7,
+      "volume": 29006633,
+      "crossover_days_ago": 1,
+      "score": 1.84
+    },
+    {
+      "ticker": "CCOI",
+      "price": 9.22,
+      "signal": "Bearish",
+      "change": -1.19,
+      "separation": -2.3,
+      "volume": 1735004,
+      "crossover_days_ago": 1,
+      "score": 1.74
+    },
+    {
+      "ticker": "EMBC",
+      "price": 5.24,
+      "signal": "Bearish",
+      "change": 6.07,
+      "separation": -3.43,
+      "volume": 1322752,
+      "crossover_days_ago": 1,
+      "score": 1.72
+    },
+    {
+      "ticker": "AHCO",
+      "price": 5.89,
+      "signal": "Bearish",
+      "change": -2.81,
+      "separation": -0.6,
+      "volume": 2652318,
+      "crossover_days_ago": 0,
+      "score": 1.7
+    },
+    {
+      "ticker": "AMPX",
+      "price": 9.14,
+      "signal": "Bearish",
+      "change": -3.18,
+      "separation": -0.01,
+      "volume": 4350197,
+      "crossover_days_ago": 0,
+      "score": 1.59
+    },
+    {
+      "ticker": "STLA",
+      "price": 5.28,
+      "signal": "Bearish",
+      "change": -2.22,
+      "separation": -0.97,
+      "volume": 20778853,
+      "crossover_days_ago": 1,
+      "score": 1.59
+    },
+    {
+      "ticker": "TIC",
+      "price": 9.57,
+      "signal": "Bullish",
+      "change": 0.1,
+      "separation": 0.45,
+      "volume": 1340477,
+      "crossover_days_ago": 1,
+      "score": 1.59
+    },
+    {
+      "ticker": "INTR",
+      "price": 5.55,
+      "signal": "Bearish",
+      "change": -2.8,
+      "separation": -0.35,
+      "volume": 4213563,
+      "crossover_days_ago": 0,
+      "score": 1.58
+    },
+    {
+      "ticker": "KOPN",
+      "price": 4.36,
+      "signal": "Bullish",
+      "change": -4.28,
+      "separation": 1.48,
+      "volume": 3232966,
+      "crossover_days_ago": 1,
+      "score": 1.58
+    }
+  ]
+}
