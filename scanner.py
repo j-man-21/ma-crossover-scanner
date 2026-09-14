@@ -244,10 +244,10 @@ def check_history_batch(data, tickers):
                 momentum_score = max(-day_change, 0)
                 separation_score = max(-separation, 0)
 
-score = (
-    momentum_score * 0.50
-    + separation_score * 0.50
-)
+                score = (
+                momentum_score * 0.50
+                + separation_score * 0.50
+                )
 
             results.append({
                 "ticker": ticker,
