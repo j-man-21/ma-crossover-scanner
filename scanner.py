@@ -238,11 +238,11 @@ def check_history_batch(data, tickers):
             # 50% recent price movement
             # 50% MA separation
             if bullish:
-    momentum_score = max(day_change, 0)
-    separation_score = max(separation, 0)
-else:
-    momentum_score = max(-day_change, 0)
-    separation_score = max(-separation, 0)
+                momentum_score = max(day_change, 0)
+                separation_score = max(separation, 0)
+            else:
+                momentum_score = max(-day_change, 0)
+                separation_score = max(-separation, 0)
 
 score = (
     momentum_score * 0.50
