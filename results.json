@@ -1,206 +1,206 @@
 {
-  "generated_at": "2026-09-17T11:29:40.645525+00:00",
+  "generated_at": "2026-09-17T19:34:16.257901+00:00",
   "count": 20,
   "results": [
     {
-      "ticker": "PMI",
-      "price": 6.48,
+      "ticker": "AEMD",
+      "price": 6.24,
       "signal": "Bullish",
-      "change": 1.41,
-      "separation": 12.73,
-      "volume": 4502165,
-      "crossover_days_ago": 1,
-      "score": 7.07
-    },
-    {
-      "ticker": "BTGO",
-      "price": 6.41,
-      "signal": "Bearish",
-      "change": -11.59,
-      "separation": -0.73,
-      "volume": 1946195,
+      "change": 336.36,
+      "separation": 16.18,
+      "volume": 7729951,
       "crossover_days_ago": 0,
-      "score": 6.16
+      "score": 176.27
     },
     {
-      "ticker": "SMR",
-      "price": 8.3,
-      "signal": "Bearish",
-      "change": -1.54,
-      "separation": -7.3,
-      "volume": 37847270,
-      "crossover_days_ago": 1,
-      "score": 4.42
-    },
-    {
-      "ticker": "BKKT",
-      "price": 7.17,
-      "signal": "Bearish",
-      "change": -7.0,
-      "separation": -1.75,
-      "volume": 1485210,
-      "crossover_days_ago": 0,
-      "score": 4.38
-    },
-    {
-      "ticker": "TE",
-      "price": 4.09,
-      "signal": "Bearish",
-      "change": -4.88,
-      "separation": -3.15,
-      "volume": 19692995,
-      "crossover_days_ago": 0,
-      "score": 4.02
-    },
-    {
-      "ticker": "TIC",
-      "price": 8.85,
-      "signal": "Bearish",
-      "change": -7.91,
-      "separation": -0.12,
-      "volume": 1460625,
-      "crossover_days_ago": 0,
-      "score": 4.01
-    },
-    {
-      "ticker": "CIFG",
-      "price": 4.08,
-      "signal": "Bearish",
-      "change": 20.41,
-      "separation": -7.81,
-      "volume": 1206545,
-      "crossover_days_ago": 1,
-      "score": 3.91
-    },
-    {
-      "ticker": "EBS",
-      "price": 6.75,
+      "ticker": "DNA",
+      "price": 8.01,
       "signal": "Bullish",
-      "change": 6.13,
-      "separation": 1.62,
-      "volume": 1229030,
+      "change": 13.46,
+      "separation": 2.01,
+      "volume": 1124194,
       "crossover_days_ago": 0,
-      "score": 3.88
+      "score": 7.73
     },
     {
-      "ticker": "TTI",
-      "price": 6.28,
-      "signal": "Bearish",
-      "change": -4.99,
-      "separation": -2.5,
-      "volume": 1963260,
-      "crossover_days_ago": 1,
-      "score": 3.74
-    },
-    {
-      "ticker": "UAMY",
-      "price": 4.56,
-      "signal": "Bearish",
-      "change": -2.15,
-      "separation": -5.25,
-      "volume": 6528625,
-      "crossover_days_ago": 1,
-      "score": 3.7
-    },
-    {
-      "ticker": "ORCU",
-      "price": 7.26,
-      "signal": "Bearish",
-      "change": 4.01,
-      "separation": -7.2,
-      "volume": 5099085,
-      "crossover_days_ago": 1,
-      "score": 3.6
-    },
-    {
-      "ticker": "IE",
-      "price": 8.94,
-      "signal": "Bearish",
-      "change": -3.77,
-      "separation": -3.19,
-      "volume": 2067645,
-      "crossover_days_ago": 1,
-      "score": 3.48
-    },
-    {
-      "ticker": "OCUL",
-      "price": 9.87,
-      "signal": "Bearish",
-      "change": -3.14,
-      "separation": -2.93,
-      "volume": 2211315,
-      "crossover_days_ago": 1,
-      "score": 3.03
-    },
-    {
-      "ticker": "ARRY",
-      "price": 4.2,
-      "signal": "Bearish",
-      "change": -4.11,
-      "separation": -1.62,
-      "volume": 5881885,
-      "crossover_days_ago": 1,
-      "score": 2.87
-    },
-    {
-      "ticker": "GEMI",
-      "price": 4.18,
-      "signal": "Bearish",
-      "change": -4.02,
-      "separation": -1.65,
-      "volume": 2930490,
-      "crossover_days_ago": 1,
-      "score": 2.83
-    },
-    {
-      "ticker": "DCH",
-      "price": 6.0,
-      "signal": "Bearish",
-      "change": -1.64,
-      "separation": -3.9,
-      "volume": 2422405,
-      "crossover_days_ago": 1,
-      "score": 2.77
-    },
-    {
-      "ticker": "SBET",
-      "price": 7.98,
-      "signal": "Bearish",
-      "change": -4.2,
-      "separation": -0.41,
-      "volume": 9904845,
+      "ticker": "SHLS",
+      "price": 7.59,
+      "signal": "Bullish",
+      "change": 11.36,
+      "separation": 0.1,
+      "volume": 4784851,
       "crossover_days_ago": 0,
-      "score": 2.3
+      "score": 5.73
     },
     {
-      "ticker": "UNIT",
-      "price": 9.54,
-      "signal": "Bearish",
-      "change": -2.45,
-      "separation": -1.51,
-      "volume": 1763820,
-      "crossover_days_ago": 1,
-      "score": 1.98
+      "ticker": "BFLY",
+      "price": 7.95,
+      "signal": "Bullish",
+      "change": 9.57,
+      "separation": 1.35,
+      "volume": 4428053,
+      "crossover_days_ago": 0,
+      "score": 5.46
     },
     {
-      "ticker": "AMPX",
-      "price": 9.1,
-      "signal": "Bearish",
-      "change": -0.66,
-      "separation": -3.01,
-      "volume": 4300745,
+      "ticker": "LTRX",
+      "price": 5.89,
+      "signal": "Bullish",
+      "change": 8.76,
+      "separation": 2.09,
+      "volume": 1229159,
       "crossover_days_ago": 1,
-      "score": 1.83
+      "score": 5.43
+    },
+    {
+      "ticker": "EMAT",
+      "price": 4.01,
+      "signal": "Bullish",
+      "change": 5.53,
+      "separation": 5.27,
+      "volume": 1269249,
+      "crossover_days_ago": 1,
+      "score": 5.4
+    },
+    {
+      "ticker": "SWVL",
+      "price": 4.5,
+      "signal": "Bearish",
+      "change": 6.38,
+      "separation": -9.5,
+      "volume": 4563618,
+      "crossover_days_ago": 0,
+      "score": 4.75
     },
     {
       "ticker": "IBRX",
-      "price": 7.91,
-      "signal": "Bearish",
-      "change": -2.83,
-      "separation": -0.65,
-      "volume": 8583840,
+      "price": 8.55,
+      "signal": "Bullish",
+      "change": 8.03,
+      "separation": 0.66,
+      "volume": 8663172,
+      "crossover_days_ago": 0,
+      "score": 4.34
+    },
+    {
+      "ticker": "ABTC",
+      "price": 8.81,
+      "signal": "Bullish",
+      "change": 8.23,
+      "separation": 0.01,
+      "volume": 1899202,
+      "crossover_days_ago": 0,
+      "score": 4.12
+    },
+    {
+      "ticker": "CERT",
+      "price": 8.55,
+      "signal": "Bullish",
+      "change": 5.1,
+      "separation": 2.22,
+      "volume": 2008724,
+      "crossover_days_ago": 0,
+      "score": 3.66
+    },
+    {
+      "ticker": "QUBT",
+      "price": 8.53,
+      "signal": "Bullish",
+      "change": 6.58,
+      "separation": 0.34,
+      "volume": 6501447,
+      "crossover_days_ago": 0,
+      "score": 3.46
+    },
+    {
+      "ticker": "EBS",
+      "price": 6.89,
+      "signal": "Bullish",
+      "change": 2.07,
+      "separation": 4.19,
+      "volume": 1195463,
       "crossover_days_ago": 1,
-      "score": 1.74
+      "score": 3.13
+    },
+    {
+      "ticker": "WYHG",
+      "price": 4.28,
+      "signal": "Bearish",
+      "change": -1.82,
+      "separation": -4.26,
+      "volume": 1373454,
+      "crossover_days_ago": 1,
+      "score": 3.04
+    },
+    {
+      "ticker": "SOC",
+      "price": 4.34,
+      "signal": "Bearish",
+      "change": -5.35,
+      "separation": -0.59,
+      "volume": 7429228,
+      "crossover_days_ago": 0,
+      "score": 2.97
+    },
+    {
+      "ticker": "BB",
+      "price": 8.05,
+      "signal": "Bullish",
+      "change": 5.3,
+      "separation": 0.45,
+      "volume": 9023659,
+      "crossover_days_ago": 0,
+      "score": 2.87
+    },
+    {
+      "ticker": "PGEN",
+      "price": 7.72,
+      "signal": "Bullish",
+      "change": 3.83,
+      "separation": 1.81,
+      "volume": 3971772,
+      "crossover_days_ago": 0,
+      "score": 2.82
+    },
+    {
+      "ticker": "TE",
+      "price": 4.32,
+      "signal": "Bearish",
+      "change": 5.62,
+      "separation": -4.41,
+      "volume": 19169085,
+      "crossover_days_ago": 1,
+      "score": 2.2
+    },
+    {
+      "ticker": "DHC",
+      "price": 8.12,
+      "signal": "Bullish",
+      "change": 2.27,
+      "separation": 1.6,
+      "volume": 1410316,
+      "crossover_days_ago": 1,
+      "score": 1.93
+    },
+    {
+      "ticker": "FRMI",
+      "price": 4.93,
+      "signal": "Bearish",
+      "change": 3.46,
+      "separation": -3.13,
+      "volume": 14857481,
+      "crossover_days_ago": 1,
+      "score": 1.56
+    },
+    {
+      "ticker": "BKKT",
+      "price": 7.54,
+      "signal": "Bearish",
+      "change": 5.09,
+      "separation": -2.87,
+      "volume": 1385101,
+      "crossover_days_ago": 1,
+      "score": 1.43
     }
   ]
 }
